@@ -19,7 +19,7 @@ const App = ({ data }) => {
 
   return (
     <>
-      <SEO/>
+      <SEO />
       <div
         className={
           'flex h-full w-full desktop:w-1/3 flex-col mb-0 mt-0 ml-auto mr-auto gap-12'
@@ -95,7 +95,11 @@ const App = ({ data }) => {
           />
         </Section>
         <hr className="border-black" />
-        <div className={'flex flex-col flex-1 gap-3 w-full text-center'}>
+        <div
+          className={
+            'flex flex-col flex-1 gap-3 w-2/3 m-auto desktop:w-full text-center'
+          }
+        >
           <p>let's take an example from the movie shall we?</p>
         </div>
         <Section>
@@ -104,7 +108,7 @@ const App = ({ data }) => {
             caption="yep this is the scene"
             additionalClasses={'w-2/3 h-auto m-auto'}
           />
-          <div className={'flex flex-1 flex-row gap-6 w-full'}>
+          <div className={'flex flex-1 flex-col desktop:flex-row gap-6 w-full'}>
             <Paragraph>
               <p>
                 when tsogt watched this scene he probably liked it becuz he a

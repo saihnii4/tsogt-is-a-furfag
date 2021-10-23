@@ -23,5 +23,17 @@ module.exports = {
         fonts: [`noto serif display\:300,400,500`],
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'Tsogt is a furry',
+        short_name: 'tsogt is a furry',
+        start_url: '/',
+        background_color: '#f7f0eb',
+        theme_color: '#EB6534',
+        display: 'fullscreen',
+        icon: 'src/images/tsogt.png',
+      },
+    },
   ],
 };

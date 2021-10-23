@@ -17,23 +17,32 @@ const SEO = ({ data }: { data? }) => {
         }
       `}
       render={(data) => (
-        <Helmet>
-          <title>Tsogt is a Furry!</title>
-          <meta property="og:title" content="Tsogt is a Furry!" />
-          <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://tsogtisafurry.gatsbyjs.io" />
-          <meta
-            property="og:image"
-            content={data.file.childImageSharp.fluid.src}
-          />
-          <meta
-            property="og:description"
-            content="because he's weird and he likes that one wolf in wolfwalkers"
-          />
-          <meta name="theme-color" content="#D4CB92" />
+        <>
+          {/* @ts-ignore */}
+          <Helmet>
+            <title>Tsogt is a Furry!</title>
+            {/* @ts-ignore */}
+            <meta name="icon" href={data.file.childImageSharp.fluid.src} />
 
-          <meta name="twitter:card" content="summary_large_image" />
-        </Helmet>
+            <meta property="og:title" content="Tsogt is a Furry!" />
+            <meta property="og:type" content="website" />
+            <meta
+              property="og:url"
+              content="https://tsogtisafurry.gatsbyjs.io"
+            />
+            <meta
+              property="og:image"
+              content={data.file.childImageSharp.fluid.src}
+            />
+            <meta
+              property="og:description"
+              content="because he's weird and he likes that one wolf in wolfwalkers"
+            />
+            <meta name="theme-color" content="#D4CB92" />
+
+            <meta name="twitter:card" content="summary_large_image" />
+          </Helmet>
+        </>
       )}
     />
   );
