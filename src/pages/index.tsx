@@ -97,7 +97,7 @@ const App = ({ data }) => {
         <hr className="border-black" />
         <div
           className={
-            "flex flex-col desktop:flex-row flex-1 gap-3 w-2/3 m-auto desktop:w-full text-center"
+            "flex flex-col desktop:flex-row flex-1 gap-3 w-2/3 m-auto desktop:w-full justify-center text-center"
           }
         >
           <p>let's take an example from the movie shall we?</p>

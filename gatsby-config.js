@@ -1,21 +1,21 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://dulguuncodes.gatsbyjs.io',
-    title: 'tsogt is a furry',
+    siteUrl: "https://dulguuncodes.gatsbyjs.io",
+    title: "tsogt is a furry",
   },
   plugins: [
-    'gatsby-plugin-postcss',
-    'gatsby-plugin-image',
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
+    "gatsby-plugin-postcss",
+    "gatsby-plugin-image",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'images',
-        path: './src/images/',
+        name: "images",
+        path: "./src/images/",
       },
-      __key: 'images',
+      __key: "images",
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
@@ -26,14 +26,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Tsogt is a furry',
-        short_name: 'tsogt is a furry',
-        start_url: '/',
-        background_color: '#f7f0eb',
-        theme_color: '#EB6534',
-        display: 'fullscreen',
-        icon: 'src/images/tsogt.png',
+        name: "Tsogt is a furry",
+        short_name: "tsogt is a furry",
+        start_url: "/",
+        background_color: "#f7f0eb",
+        theme_color: "#EB6534",
+        display: "fullscreen",
+        icon: "src/images/tsogt.png",
       },
     },
+    `gatsby-plugin-preload-fonts`,
   ],
 };
