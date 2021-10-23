@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://www.yourdomain.tld',
+    siteUrl: 'https://dulguuncodes.gatsbyjs.io',
     title: 'tsogt is a furry',
   },
   plugins: [
