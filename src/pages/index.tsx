@@ -6,7 +6,7 @@ import Image from '../components/image';
 import SEO from '../components/seo';
 
 const App = ({ data }) => {
-  const useImage = (file) => {
+  const useImage = (file: string) => {
     return data.allFile.edges.reduce((acc, val) => {
       if (acc) return acc;
       const img = val.node.childImageSharp.fluid;
@@ -18,8 +18,6 @@ const App = ({ data }) => {
 
   const wolfWalker = useImage('presumption.png');
   const tsogt = useImage('tsogt.png');
-
-  console.log(tsogt);
 
   return (
     <>
@@ -63,7 +61,7 @@ const App = ({ data }) => {
               indifference to <i>exotic</i> content
             </p>
             <p>
-              to say tsogt isn't weird would be to say nothing, but no one is
+              to say tsogt is weird would be to say nothing, but no one is
               flawless, so what else do i have on him?
             </p>
           </Paragraph>
