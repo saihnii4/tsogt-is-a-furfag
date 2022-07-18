@@ -21,7 +21,7 @@ const SEO = ({ data }: { data? }) => {
           {/* @ts-ignore */}
           <Helmet>
             <title>Tsogt is a Furry!</title>
-            {/* @ts-ignore */}
+            {/* @ts-ignore */} {/* i still don't know why I did this */}
             <meta name="icon" href={data.file.childImageSharp.fluid.src} />
 
             <meta property="og:title" content="Tsogt is a Furry!" />

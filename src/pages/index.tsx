@@ -4,6 +4,7 @@ import Paragraph from '../components/paragraph';
 import Section from '../components/section';
 import Image from '../components/image';
 import SEO from '../components/seo';
+import { Heading } from "../components/heading";
 
 const App = ({ data }) => {
   const useImage = (file: string) => {
@@ -18,6 +19,7 @@ const App = ({ data }) => {
 
   const wolfWalker = useImage('presumption.png');
   const tsogt = useImage('tsogt.png');
+  const cell = useImage('tsogts-last-brain-cell.jpg');
 
   return (
     <>
@@ -58,18 +60,18 @@ const App = ({ data }) => {
             </p>
             <p>
               not to mention the countless number of times he has shown his
-              indifference to <i>exotic</i> content
+              desensitivity towards <i>exotic</i> content
             </p>
             <p>
-              to say tsogt is weird would be to say nothing, but no one is
-              flawless, so what else do i have on him?
+              to say tsogt is weird would be to say absolutely nothing, but no one is
+              virtuous, so what else do I have on him?
             </p>
           </Paragraph>
           <Paragraph>
             <p>
-              tsogt has repeatedly shown his <i>"interest"</i> for anime, and
-              doesn't shy from letting us know it. for instance, Tsogt has shown
-              an <i>"appreciation"</i> for a particular Naruto character, I
+              tsogt has repeatedly shown his <i>"affinity"</i> for anime, and
+              doesn't shy away from letting us know it. for instance, Tsogt has
+              expressed adoration for a particular Naruto character, I
               believe it was Hinata or something, and how he views her as
               sexually attractive.
             </p>
@@ -90,7 +92,6 @@ const App = ({ data }) => {
             src={
               'https://i.pinimg.com/564x/3d/61/de/3d61deb197b65c4fe094469ef3e3711b--legs-tumblr-animal-humor.jpg'
             }
-            additionalClasses={null}
             caption={
               '"haha, a literal wolf walker, gib me internet points" - some idiot on reddit or 9gag'
             }
@@ -136,9 +137,9 @@ const App = ({ data }) => {
                 enjoyed the movie, but that's not my goal.
               </Paragraph>
               <Paragraph>
-                <h3>
+                <Heading>
                   <b>Regression into primitive and archaic instincts</b>
-                </h3>
+                </Heading>
                 Over half of all furries have had interest into a form of sexual
                 content known as "yiff". "Yiffing" is a term that describes
                 fictional (sometimes cartoonish) animals, known as fursonas by
@@ -146,15 +147,22 @@ const App = ({ data }) => {
                 form of cross-breeding is greatly frowned upon by society and is
                 a form of "de-evolution".
                 <br />
+                <br/>
                 Tsogt has openly stated in a recent interview that he did indeed
-                view the characters as attractive and wanted to have cotitus
+                view the characters as attractive and expressed his desire to have coitus
                 with them.
               </Paragraph>
             </div>
           </div>
         </div>
         <hr />
-        <h4 className={'text-center pb-12'}>This is the end of my ted talk, good-bye</h4>
+        <Section>
+          <Heading>
+            <b>thank you for listening to my ted talk, bye</b>
+          </Heading>
+
+        </Section>
+        <div></div>
       </div>
     </>
   );
